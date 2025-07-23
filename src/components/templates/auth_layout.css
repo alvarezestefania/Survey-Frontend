@@ -1,0 +1,32 @@
+.layoutStyle {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.headerStyle {
+  height: 100%;
+  text-align: center;
+  height: 64px;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-inline: 48px;
+  line-height: 64px;
+  background-color: #f6892c;
+}
+
+.layout-title {
+  margin: 0 !important;
+  color: white !important;
+  align-self: center;
+}
+
+.contentStyle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
