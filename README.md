@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Survey App (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una aplicación web frontend desarrollada con **React 19**, diseñada para interactuar con una API REST de gestión de encuestas. La aplicación permite a los usuarios registrarse, autenticarse y completar una encuesta sobre desafíos operativos en droguerías, consumiendo los servicios del backend Laravel.
 
-## Available Scripts
+## 🔍 Descripción general
 
-In the project directory, you can run:
+La aplicación permite:
 
-### `npm start`
+- Registro y autenticación de usuarios con manejo de cookies
+- Navegación protegida basada en estado de autenticación
+- Completar encuesta con diferentes tipos de campos (texto, radio, checkbox, select, range)
+- Visualizar respuestas previamente registradas por el usuario
+- Interfaz responsive con componentes de Ant Design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Instrucciones para ejecutar el proyecto
 
-### `npm test`
+### 📋 Requisitos previos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js >= 18.0.0
+- npm >= 8.0.0
+- Backend Survey API ejecutándose (ver [repositorio Survey-Backend](https://github.com/alvarezestefania/Survey-Backend))
 
-### `npm run build`
+### 1. Clonar el repositorio
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+    git clone https://github.com/tu-usuario/Survey-Frontend.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Ir a la carpeta del proyecto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+    cd Survey-Frontend
+```
 
-### `npm run eject`
+### 3. Cambiarse a la rama develop
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+    git checkout develop
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 4. Instalar dependencias con npm
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+    npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 5. Copiar archivo de variables de entorno
 
-## Learn More
+```bash
+    cp .env.local.example .env.local
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 6. Levantar el servidor de desarrollo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+    npm start
+```
 
-### Code Splitting
+💡 La aplicación estará disponible en http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🌐 Funcionalidades principales
 
-### Analyzing the Bundle Size
+- **Autenticación:** Login/registro con gestión de tokens y cookies
+- **Rutas protegidas:** Navegación condicional según estado de usuario
+- **Formulario dinámico:** Campos adaptativos según tipo de pregunta
+- **Gestión de estado:** Hooks personalizados para autenticación y encuestas
+- **Validación:** Validación en tiempo real de formularios
+- **Responsive:** Diseño adaptable con Ant Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🛠️ Tecnologías utilizadas
 
-### Making a Progressive Web App
+- **React 19** - Librería principal
+- **React Router DOM 7.7.0** - Navegación y rutas
+- **Ant Design** - Componentes UI
+- **Axios 1.10.0** - Cliente HTTP para API
+- **React Cookie 8.0.1** - Manejo de cookies para autenticación
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🧠 Notas adicionales
 
-### Advanced Configuration
+- Las funcionalidades están organizadas en ramas de feature (`feat/auth`, `feat/survey`) y luego integradas en develop
+- La rama `master` se mantiene limpia como rama base
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🧑‍💻 Autor
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Estefania Alvarez 
