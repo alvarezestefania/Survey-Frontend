@@ -82,5 +82,6 @@ La aplicación permite:
 - Las funcionalidades están organizadas en ramas de feature (`feat/auth`, `feat/survey`) y luego integradas en develop
 - La rama `master` se mantiene limpia como rama base
 
-🧑‍💻 Autor
-Estefanía Álvarez
+## 🧑‍💻 Autor
+
+Estefania Alvarez 
