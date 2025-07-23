@@ -1,0 +1,20 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-container>span{
+    color: white;
+    font-size: 16px; 
+}
+
+
+
+
+.nav-icon{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
